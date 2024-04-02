@@ -8,7 +8,6 @@ import androidx.navigation.fragment.fragment
 import v.razinov.first.firstFeature
 import v.razinov.fragmentnavigation.databinding.ActivityMainBinding
 import v.razinov.second.secondFeature
-import java.net.CookieManager
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-        android.webkit.CookieManager.getInstance().
         navController.graph = navController.createGraph(
             startDestination = "FragmentSelection",
             route = "MainGraph",
